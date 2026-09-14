@@ -1,1 +1,183 @@
-admin/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard · Harrison Sports HQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-panel: #030712;
+      --accent: #38bdf8; /* Neon blue admin accent */
+      --accent-soft: rgba(56, 189, 248, 0.25);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: radial-gradient(circle at top, #0b1120 0, var(--bg-main) 45%, #000 100%);
+      color: var(--text-main);
+    }
+
+    header {
+      background: #0a1a2a;
+      padding: 22px 40px;
+      border-bottom: 2px solid var(--accent);
+      box-shadow: 0 0 22px var(--accent-soft);
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-shadow: 0 0 14px var(--accent);
+    }
+
+    main {
+      padding: 30px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .panel {
+      background: var(--bg-panel);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      box-shadow: 0 0 18px rgba(0,0,0,0.5);
+      transition: all 0.2s ease;
+    }
+
+    .panel:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 22px var(--accent-soft);
+    }
+
+    .panel-title {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: var(--accent);
+      border: none;
+      border-radius: 8px;
+      color: #000;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      box-shadow: 0 0 18px var(--accent-soft);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-muted);
+      margin-top: 40px;
+      border-top: 1px solid #1f2937;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title">Admin Dashboard</div>
+  </header>
+
+  <main>
+    <h2>Control Center</h2>
+
+    <div class="grid">
+
+      <!-- Soccer -->
+      <div class="panel">
+        <div class="panel-title">Soccer Management</div>
+        <button>Update Soccer Stats</button>
+        <button>Update Soccer News</button>
+        <button>Update Soccer Standings</button>
+        <button>Update Soccer Schedule</button>
+      </div>
+
+      <!-- Baseball -->
+      <div class="panel">
+        <div class="panel-title">Baseball Management</div>
+        <button>Update Baseball Stats</button>
+        <button>Update Baseball News</button>
+        <button>Update Baseball Standings</button>
+        <button>Update Baseball Schedule</button>
+      </div>
+
+      <!-- Basketball -->
+      <div class="panel">
+        <div class="panel-title">Basketball Management</div>
+        <button>Update Basketball Stats</button>
+        <button>Update Basketball News</button>
+        <button>Update Basketball Standings</button>
+        <button>Update Basketball Schedule</button>
+      </div>
+
+      <!-- Global News -->
+      <div class="panel">
+        <div class="panel-title">Latest News</div>
+        <button>Post Breaking News</button>
+        <button>Edit Existing News</button>
+      </div>
+
+      <!-- Weekly Highlights -->
+      <div class="panel">
+        <div class="panel-title">Weekly Highlights</div>
+        <button>Update Highlights</button>
+        <button>Feature Top Plays</button>
+      </div>
+
+      <!-- Users -->
+      <div class="panel">
+        <div class="panel-title">User Management</div>
+        <button>View Users</button>
+        <button>Promote Admin</button>
+        <button>Remove User</button>
+      </div>
+
+      <!-- Email System -->
+      <div class="panel">
+        <div class="panel-title">Email System</div>
+        <button>Send Weekly Email</button>
+        <button>Send Custom Announcement</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Admin Dashboard · Harrison Sports HQ
+  </footer>
+</body>
+</html>
