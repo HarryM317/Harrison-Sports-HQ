@@ -1,1 +1,164 @@
-baseball/schedule.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baseball Universe · Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-panel: #030712;
+      --accent: #ef4444; /* RED for baseball */
+      --accent-soft: rgba(239, 68, 68, 0.25);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: radial-gradient(circle at top, #0b1120 0, var(--bg-main) 45%, #000 100%);
+      color: var(--text-main);
+    }
+
+    header {
+      background: #190707;
+      padding: 22px 40px;
+      border-bottom: 2px solid var(--accent);
+      box-shadow: 0 0 22px var(--accent-soft);
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-shadow: 0 0 14px var(--accent);
+    }
+
+    nav {
+      margin-top: 10px;
+      display: flex;
+      gap: 18px;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid #1f2937;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 12px var(--accent-soft);
+    }
+
+    main {
+      padding: 30px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .game-card {
+      background: var(--bg-panel);
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      margin-bottom: 20px;
+      box-shadow: 0 0 18px rgba(0,0,0,0.5);
+      transition: all 0.2s ease;
+    }
+
+    .game-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 22px var(--accent-soft);
+    }
+
+    .game-title {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .game-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-muted);
+      margin-top: 40px;
+      border-top: 1px solid #1f2937;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title">Baseball Universe · Schedule</div>
+    <nav>
+      <a href="../stats.html">Stats</a>
+      <a href="../news.html">News</a>
+      <a href="../standings.html">Standings</a>
+      <a href="../schedule.html">Schedule</a>
+      <a href="../../index.html">Back to Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Upcoming Games</h2>
+
+    <!-- You will fill these in manually -->
+    <div class="game-card">
+      <div class="game-title">Example Ball Club @ Example Sluggers</div>
+      <div class="game-body">
+        Date: July 12, 2026<br>
+        Time: 7:10 PM EST<br>
+        Stadium: Example Park
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-title">Example Rockets @ Example Bears</div>
+      <div class="game-body">
+        Date: July 13, 2026<br>
+        Time: 1:05 PM EST<br>
+        Stadium: Bear Den Field
+      </div>
+    </div>
+
+    <h2>Recent Results</h2>
+
+    <div class="game-card">
+      <div class="game-title">Example Sluggers 5 — Example Ball Club 3</div>
+      <div class="game-body">
+        Date: July 10, 2026<br>
+        Winning Pitcher: J. Smith<br>
+        Home Runs: T. Johnson (2)
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    Baseball Universe Schedule · Updated Daily
+  </footer>
+</body>
+</html>
