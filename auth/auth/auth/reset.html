@@ -1,1 +1,94 @@
-auth/reset.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reset Password · Harrison Sports HQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-panel: #030712;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.25);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: radial-gradient(circle at top, #0b1120 0, var(--bg-main) 45%, #000 100%);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: var(--bg-panel);
+      padding: 30px;
+      border-radius: 14px;
+      width: 350px;
+      border: 1px solid #1f2937;
+      box-shadow: 0 0 22px var(--accent-soft);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      border: 1px solid #1f2937;
+      background: #0f172a;
+      color: var(--text-main);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: var(--accent);
+      border: none;
+      border-radius: 8px;
+      color: #000;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      box-shadow: 0 0 18px var(--accent-soft);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Reset Password</h1>
+
+    <input type="email" placeholder="Enter your email">
+
+    <button>Send Reset Link</button>
+
+    <a href="login.html">Back to Login</a>
+    <a href="../index.html">Back to Home</a>
+  </div>
+</body>
+</html>
